@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-audit-tool"  # 包名（pip install 时使用）
+version = "0.2.0"       # 版本号（遵循语义化版本）
+authors = [
+  { name = "奋进的小杨", email = "2207862552@qq.com" }
+]
+description = "AI包漏洞审计工具，支持命令行和模块调用"
+readme = "README.md"
+requires-python = ">=3.8"  # 支持的Python版本
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+# 核心依赖（安装包时自动安装）
+dependencies = [
+  "requests>=2.31.0",
+  "toml>=0.10.2",
+  "python-dateutil>=2.8.2",
+]
+
+# 可选依赖（用户可按需安装，如AI功能）
+[project.optional-dependencies]
+ai = [
+  "openai>=1.0.0",  # 用于调用AI模型API
+]
+
+# 命令行入口配置（安装后生成可执行命令）
+[project.scripts]
+ai-audit = "ai_audit.cli:main"  # 命令名 = "模块路径:函数名"
+    

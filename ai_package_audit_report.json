@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "audit_time": "2025-09-07 13:05:25",
+    "project_path": "/home/yzj/Crw_cve/ai_audit",
+    "total_dependencies": 102,
+    "total_ai_packages": 0,
+    "audit_duration": "47.28s",
+    "max_workers": 5,
+    "ai_audit_enabled": false
+  },
+  "summary": {
+    "total_vulnerable_packages": 0,
+    "high_risk_count": 0,
+    "medium_risk_count": 0,
+    "low_risk_count": 0,
+    "high_risk_packages": [],
+    "medium_risk_packages": [],
+    "low_risk_packages": []
+  },
+  "ai_packages_by_domain": {
+    "自然语言处理": [],
+    "计算机视觉": [],
+    "强化学习": [],
+    "生成式模型": [],
+    "多模态模型": [],
+    "AI基础设施": [],
+    "其他AI领域": []
+  },
+  "vulnerable_packages": []
+}
